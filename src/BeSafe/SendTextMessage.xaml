@@ -1,0 +1,78 @@
+<!--
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+// This code is licensed under the MIT License (MIT).
+// THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+// IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+// PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+-->
+<Page
+    x:Class="SmsSendAndReceive.SendTextMessage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmsSendAndReceive"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="RootGrid" Margin="12,20,12,12">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Margin="0,0,0,10">
+                <TextBlock x:Name="Heading" Text="BE SAFE" Style="{StaticResource SampleHeaderTextStyle}"/>
+                <TextBlock x:Name="MessagetoUser" Style="{StaticResource ScenarioDescriptionTextStyle}" TextWrapping="Wrap" 
+          Text="" />
+            </StackPanel>
+
+            <ScrollViewer Grid.Row="1" VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto" Margin="0,0.333,0,439">
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="336" Height="40">
+                    <!--<TextBox x:Name="SendMessageText" Margin="5,5,0,5" Grid.Row="1" Grid.Column="1" AcceptsReturn="True"/>-->
+                    <!--<Button x:Name="SendButton" Content="Start App" Margin="4.991,5,227.009,0" Click="Send_Click" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" UseLayoutRounding="True" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="0.002"/>
+                        </Button.RenderTransform>
+                    </Button>-->
+                    <!--<TextBlock Text="To:" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource BasicTextStyle}" Grid.Row="0" Grid.Column="0"/>
+                    <TextBox x:Name="SendToText" HorizontalAlignment="Left" Width="200" Margin="5,5,0,5" Grid.Row="0" Grid.Column="1"/>
+                    <TextBlock Text="Message:" HorizontalAlignment="Left" VerticalAlignment="Center"  Style="{StaticResource BasicTextStyle}" Grid.Row="1" Grid.Column="0"/>
+                    <TextBox x:Name="SendMessageText" Margin="5,5,0,5" Grid.Row="1" Grid.Column="1" AcceptsReturn="True"/>-->
+                    <!--<Button x:Name="App_Start_Button" Content="Start App" Margin="5,5,0,0" Click="App_Start_Button_Click" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <Button.RenderTransform>
+                    <CompositeTransform Rotation="1.477"/>
+                    </Button.RenderTransform>
+                    </Button>-->
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- Status Block for providing messages to the user.  Use the
+             NotifyUser() method to populate the message -->
+            <Border x:Name="ErrorBorder" Background="Red" Grid.Row="2"/>
+            <TextBlock x:Name="StatusBlock" Grid.Row="2" Margin="12, 10, 12, 10" Visibility="Collapsed"/>
+            <Button x:Name="SendButton" Content="Start App" HorizontalAlignment="Left" Margin="12,123.333,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Send_Click" RenderTransformOrigin="0.465,0.531" Width="151"/>
+
+            <Button x:Name="button" 
+                    Content="Enter / Change Number"
+                    HorizontalAlignment="Left"
+                    Margin="203,123.333,0,0"
+                    Grid.Row="1"
+                    VerticalAlignment="Top" Click="button_Click"/>
+            <TextBlock x:Name="textBlock" 
+                       HorizontalAlignment="Left" 
+                       Margin="82,358.333,0,0" 
+                       Grid.Row="1" TextWrapping="Wrap" 
+                       Text="" VerticalAlignment="Top"/>
+            <TextBlock x:Name="ScenarioOutput_X" HorizontalAlignment="Left" Margin="23,189,0,0" Grid.Row="1" TextWrapping="Wrap" Text="X : " VerticalAlignment="Top"/>
+            <TextBlock x:Name="ScenarioOutput_Y" HorizontalAlignment="Left" Margin="64,189,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Y :" VerticalAlignment="Top"/>
+            <TextBlock x:Name="ScenarioOutput_Z" HorizontalAlignment="Left" Margin="101,189,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Z :" VerticalAlignment="Top"/>
+
+        </Grid>
+    </Grid>
+</Page>
