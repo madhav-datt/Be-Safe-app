@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:r="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap mp r">
+  <Identity Name="Microsoft.SDKSamples.SmsSendAndReceive.CS" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="3.0.4.0" />
+  <mp:PhoneIdentity PhoneProductId="972027d4-8dee-4fbd-b5bd-1c4d2955fbdd" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Be Safe - Antidaephobiax</DisplayName>
+    <PublisherDisplayName>Antidaephobiax -  Avikalp Srivastava &amp; Madhav Datt &amp;</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="SmsSendAndReceive.App">
+      <uap:VisualElements DisplayName="Be Safe" Square150x150Logo="Assets\squaretile-sdk.png" Square44x44Logo="Assets\SmallTile-sdk.png" Description="Be Safe is an accident detection app that uses real time data from the phone's inbuilt accelerometer and detects a high acceleration event to send an instant message to your emergency contact person with your location. Developed by Avikalp Srivastava and Madhav Datt." BackgroundColor="#00b2f0">
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="SmsBackgroundTask.SampleSmsBackgroundTask">
+          <BackgroundTasks>
+            <Task Type="general" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <uap:Capability Name="phoneCall" />
+    <r:Capability Name="cellularMessaging" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>

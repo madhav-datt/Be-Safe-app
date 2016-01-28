@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="SmsSendAndReceive.WelcomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmsSendAndReceive"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Foreground="#FF0F0D0D">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="WelcomeMessageTextBlock" HorizontalAlignment="Left" Margin="52,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="196" Width="274" FontFamily="Poor Richard" FontSize="21.333" Foreground="#FF2C6FC6">
+    		<Run Text="Hello"/>
+    		<Run Text=" "/>
+    		<Run Text="&amp;"/>
+    		<Run Text=" "/>
+    		<Run Text="W"/>
+    		<Run Text="elcome to"/>
+    		<Run Text=" Be Safe! "/>
+    		<LineBreak/>
+    		<Run Text="This app uses accelerometer data readings"/>
+    		<Run Text=" to identify a motor accident event and send a text message to your family/friends with your location. "/>
+    		<LineBreak/>
+    		<Run Text="Please enter the mobile no. of your emergency contact person"/>
+    		<Run Text=" "/>
+    		<Run Text=" "/>
+        </TextBlock>
+        <TextBox x:Name="WelcometextBox" 
+                 HorizontalAlignment="Left" 
+                 Height="25" Margin="150,296,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="" 
+                 VerticalAlignment="Top" 
+                 Width="180" 
+                 InputScope="TelephoneNumber"
+                 TextChanged="WelcometextBox_TextChanged"
+                 Background="White" 
+                 Foreground="#FF25252C"/>
+        <Button x:Name="EnterNumberButton" 
+                Content="Enter Number" 
+                HorizontalAlignment="Left" 
+                Margin="126,349,0,0" 
+                VerticalAlignment="Top"
+                Click="WelcomeButton_click"/>
+        <TextBlock x:Name="InvalidNumberMessageTextBlock" HorizontalAlignment="Left" Height="49" Margin="48,403,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="274" Foreground="#FFE21B1B" TextAlignment="Center" FontWeight="Bold"/>
+        <TextBox x:Name="CountryCodeTextBox" 
+                 HorizontalAlignment="Left" 
+                 Height="32" Margin="56,296,0,0"
+                 TextWrapping="Wrap" 
+                 Text="+" VerticalAlignment="Top" Width="69" Background="White"/>
+        <TextBlock x:Name="CountryCodeTextBlock" 
+                   HorizontalAlignment="Left" 
+                   Height="31" Margin="46,268,0,0"
+                   TextWrapping="Wrap" 
+                   Text="Country Code" VerticalAlignment="Top" Width="115" Foreground="#FFF9F9F9"/>
+
+
+    </Grid>
+</Page>
