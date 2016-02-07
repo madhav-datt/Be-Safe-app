@@ -5,7 +5,7 @@ App written by **Avikalp Srivastava** and **Madhav Datt** with mentorship from *
 
 Be-Safe is tool for *Traffic accident detection and notification with smartphones* and aims to reduce emergency response time in vehicle accidents.
 
-Windows 10 app to send automatic alert for help/rescue when the user is in a car accident.
+Windows 10 app to send automatic alert for help/rescue when the user is in a car accident. Programmed using C# and XAML, with the Windows Phone Accelerometer API, Maps API and Messaging (SMS) API.
 
 ## Why use this App
 
@@ -26,6 +26,6 @@ To use the app your Windows 10 Phone must have:
 
 The app uses the phone's in-built sensors (accelerometer) and measures changes in its reading by polling the accelerometer at predefined intervals. It then compares change in acceleration of the phone to an emperically determined threshold to  automatically detect if the user was in a car accident.
 
-The threshold change in acceleration is based on [research](http://www1.cse.wustl.edu/~schmidt/PDF/wreckwatch.pdf) and statistical data to minimize false positives. The app will not get triggered if the phone falls on the ground or is thrown by a person.
+The threshold change in acceleration is based on [research](http://www1.cse.wustl.edu/~schmidt/PDF/wreckwatch.pdf) and statistical data to minimize false positives. The app will not get triggered if the phone falls on the ground or is thrown at a wall.
 
 If the threshold change in acceleration is crossed, the app assumes that the user is in a car accident and sends out an emergency alert SMS/Text Message to the pre-entered emergency number with the users location.
