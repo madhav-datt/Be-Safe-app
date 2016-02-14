@@ -235,8 +235,7 @@ namespace SmsSendAndReceive
                     }
                 }
                 catch (Exception ex)
-                {
-                    //
+                { // No action needed
                 }
             }
         }
