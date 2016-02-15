@@ -1,3 +1,10 @@
+/**
+ * SendTextMessage.xaml.cs
+ *
+ * Copyright (C)   2016    Madhav Datt, Avikalp Srivastava
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ *
+ */
 
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
