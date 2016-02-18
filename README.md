@@ -18,7 +18,7 @@ A major problem in using these systems everywhere is that they are infeasible or
 Download the app on your Windows 10 Phone from [here](https://www.microsoft.com/en-in/store/apps/windows-phone). Run the app and enter an emergency mobile number (this could be of a friend, family or the emergency services) to start using it.
 
 To use the background app, your Windows 10 Phone must have:
-* An accelerometer
+* An accelerometer sensor
 * An active data connection
 * The ability to send text messages
 
