@@ -30,4 +30,4 @@ The app uses the phone's in-built sensors (accelerometer) and measures changes i
 
 The threshold change in acceleration is based on [research](http://www1.cse.wustl.edu/~schmidt/PDF/wreckwatch.pdf) and statistical data to minimize false positives. The app will not get triggered if the phone falls on the ground or is thrown at a wall.
 
-If the threshold change in acceleration is crossed, the app assumes that the user is in a car accident and sends out an emergency alert SMS/Text Message to the pre-entered emergency number with the users location.
+If the threshold change in acceleration (set to around 4 times the value of [g](https://en.wikipedia.org/wiki/G-force)) is crossed, the app assumes that the user is in a car accident and sends out an emergency alert SMS/Text Message to the pre-entered emergency number with the users location.
