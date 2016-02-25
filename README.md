@@ -1,7 +1,7 @@
 # Be-Safe-app
 ![Antidaephobiax Graphics](https://github.com/madhav-datt/Be-Safe-app/blob/master/src/BeSafe/Assets/SplashScreen.scale-150.png)
 
-App written by **Avikalp Srivastava** and **Madhav Datt** with mentorship from **Microsoft**.
+App written by **[Avikalp Srivastava](https://github.com/Avikalp7)** and **Madhav Datt** with mentorship from **Microsoft**.
 
 Be-Safe is tool for *Traffic accident detection and notification with smartphones* and aims to reduce emergency response time in vehicle accidents.
 
