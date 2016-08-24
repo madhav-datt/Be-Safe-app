@@ -9,7 +9,7 @@ Windows 10 app to send automatic *alert for help/rescue* when the user is in a c
 
 ## Why use this App
 
-A very large number of car accident fatalties happen because of long emergency services response times, especially if the accident happens in isolated areas or if the driver is injured/unconscious and not in a position to call for help. Based on 2007 traffic accident data, automatic traffic accident detection and notification systems could have saved *2,460 lives* (i.e., 6% of 41,000 fatalities) had they been in universal use. 
+A very large number of car accident fatalities happen because of long emergency services response times, especially if the accident happens in isolated areas or if the driver is injured/unconscious and not in a position to call for help. Based on 2007 traffic accident data, automatic traffic accident detection and notification systems could have saved *2,460 lives* (i.e., 6% of 41,000 fatalities) had they been in universal use. 
 
 A major problem in using these systems everywhere is that they are infeasible or extremely expensive to install in existing vehicles and increase the initial cost of new vehicles. Our app uses smartphones to make up for this
 
