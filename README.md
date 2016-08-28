@@ -5,7 +5,7 @@ App written by **[Avikalp Srivastava](https://github.com/Avikalp7)** and **[Madh
 
 Be-Safe is tool for *Traffic accident detection and notification with smartphones* and aims to reduce emergency response time in vehicle accidents.
 
-Windows 10 app to send automatic *alert for help/rescue* when the user is in a car accident. Programmed using C# and XAML, with the Windows Phone Accelerometer API, Maps API and Messaging (SMS) API.
+Windows 10 app to send automatic *alerts for help/rescue* when the user is in a car accident. Programmed using C# and XAML, with the Windows Phone Accelerometer API, Maps API and Messaging (SMS) API.
 
 ## Why use this App
 
